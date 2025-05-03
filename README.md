@@ -1,3 +1,5 @@
+# This is a fork containing only proton especially build for wayland only!
+
 # Wine to rule them all !
 
 You must be logged in to GitHub in order to download Wine or Proton nightly builds.

@@ -1,0 +1,30 @@
+diff -Naur a/external-resources/Proton/lsteamclient/steam_defs.h b/external-resources/Proton/lsteamclient/steam_defs.h
+--- a/external-resources/Proton/lsteamclient/steam_defs.h	2025-05-01 21:30:51.000000000 -0400
++++ b/external-resources/Proton/lsteamclient/steam_defs.h	2025-05-01 21:54:16.646361432 -0400
+@@ -1,11 +1,9 @@
+ #include <stdint.h>
+ #include <limits.h>
++#include <stdbool.h>
+ typedef uint32_t EHTMLMouseButton, EHTMLKeyModifiers;
+ 
+ #ifndef __cplusplus
+-#ifndef bool
+-typedef char bool; /* 1 byte on modern visual studio c++ */
+-#endif
+ 
+ typedef uint8_t uint8;
+ typedef int8_t int8;
+diff -Naur a/external-resources/Proton/vrclient_x64/vrclient_x64/vrclient_defs.h b/external-resources/Proton/vrclient_x64/vrclient_x64/vrclient_defs.h
+--- a/external-resources/Proton/vrclient_x64/vrclient_x64/vrclient_defs.h	2025-05-01 21:30:51.000000000 -0400
++++ b/external-resources/Proton/vrclient_x64/vrclient_x64/vrclient_defs.h	2025-05-01 21:58:36.854374138 -0400
+@@ -1,9 +1,7 @@
+ #ifdef __cplusplus
+ #include <algorithm>
+ #else
+-#ifndef bool
+-typedef char bool; /* 1 byte on modern visual studio c++ */
+-#endif
++#include <stdbool.h>
+ 
+ /* enums */
+ typedef int
