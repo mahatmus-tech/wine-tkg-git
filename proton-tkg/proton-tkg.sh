@@ -175,10 +175,6 @@ function build_vrclient {
   #git checkout 52065df3d6f3af96300dac98cdf7397f26abfcd7
   #cd ..
 
-  cd "$_nowhere"
-  patch -Np1 -i steamgcc15bool.patch
-  cd openvr
-
   export WINEMAKERFLAGS="--nosource-fix --nolower-include --nodlls --nomsvcrt --dll -I$_nowhere/proton_dist_tmp/include/wine/windows/ -I$_nowhere/proton_dist_tmp/include/ -I$_nowhere/proton_dist_tmp/include/wine/"
   export CFLAGS="-O2 -std=gnu17 -g -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types"
   export CXXFLAGS="-Wno-attributes -std=c++0x -O2 -g"
