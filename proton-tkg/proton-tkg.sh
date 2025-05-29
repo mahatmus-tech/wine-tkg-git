@@ -1141,7 +1141,7 @@ else
     if [[ "$_prefix_version" = *.*-* ]]; then
       sed -i -e "s|CURRENT_PREFIX_VERSION=\"TKG\"|CURRENT_PREFIX_VERSION=\"$_prefix_version\"|" "proton_tkg_$_protontkg_version/proton"
     else
-      _prefix_version=$( echo "$_proton_branch" | egrep -o '[0-9].[0-9]' )
+      _prefix_version=$( echo "$_proton_branch" | egrep -o '[0-9]*.[0-9]' )
       sed -i -e "s|CURRENT_PREFIX_VERSION=\"TKG\"|CURRENT_PREFIX_VERSION=\"$_prefix_version-999\"|" "proton_tkg_$_protontkg_version/proton"
     fi
 
